@@ -32,18 +32,18 @@ generateBtn.addEventListener('click', async () => {
         `;
 
         countrySection.innerHTML = `
-            <div class="card country-card">
-                <h3>Country Details: ${data.user.country}</h3>
-                <img src="${data.country.flag}" alt="National Flag" class="flag-img">
-                <p><strong>Capital City:</strong> ${data.country.capital}</p>
-                <p><strong>Official Language(s):</strong> ${data.country.languages}</p>
-                <p><strong>Currency:</strong> ${data.country.currencyCode}</p>
-                <hr>
-                <h4>Exchange Rates</h4>
-                <p><strong>1 ${data.exchange.base} =</strong> ${data.exchange.toUSD} USD</p>
-                <p><strong>1 ${data.exchange.base} =</strong> ${data.exchange.toKZT} KZT</p>
-            </div>
-        `;
+    <div class="card country-card">
+        <h3>Country Details: ${data.user.country}</h3>
+        <img src="${data.country.flag}" alt="Flag" class="flag-img" style="width:200px; border-radius: 8px;">
+        <p><strong>Capital City:</strong> ${data.country.capital}</p>
+        <p><strong>Official Language(s):</strong> ${data.country.languages}</p>
+        <p><strong>Currency:</strong> ${data.country.currencyCode}</p>
+        <hr>
+        <h4>Exchange Rates</h4>
+        <p><strong>1 ${data.exchange.base} =</strong> ${data.exchange.toUSD} USD</p>
+        <p><strong>1 ${data.exchange.base} =</strong> ${data.exchange.toKZT} KZT</p>
+    </div>
+`;
 
         newsArticles.innerHTML = data.news.map(article => `
             <div class="news-card">
