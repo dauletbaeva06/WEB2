@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> </head>
+<body>
+    <form id="queryForm">
+        <input type="date" id="start_date"> <input type="date" id="end_date">
+        <select id="field"> <option value="field1">Field 1</option>
+            <option value="field2">Field 2</option>
+            <option value="field3">Field 3</option>
+        </select>
+        <button type="submit">Analyze</button>
+    </form>
+    
+    <div id="metrics"></div> <canvas id="myChart" width="400" height="200"></canvas> <script src="script.js"></script>
+</body>
+</html>
